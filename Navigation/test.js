@@ -35,6 +35,8 @@ function showError(error)
             break;
     }
 }
+function Geomagnetic(event) 
+{
 let sensor = new MagnetometerSensor();
 sensor.start();
 
@@ -45,3 +47,4 @@ sensor.onchange = function(event) {
 };
 
 sensor.onerror = event => console.log(event.error.name, event.error.message);
+};
