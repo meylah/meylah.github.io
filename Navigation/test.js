@@ -35,3 +35,13 @@ function showError(error)
             break;
     }
 }
+let sensor = new MagnetometerSensor();
+sensor.start();
+
+sensor.onchange = function(event) {
+    console.log("Magnetic field along the X-axis " + event.reading.magneticFieldX);
+    console.log("Magnetic field along the Y-axis " + event.reading.magneticFieldY);
+    console.log("Magnetic field along the Z-axis " + event.reading.magneticFieldZ);
+};
+
+sensor.onerror = event => console.log(event.error.name, event.error.message);
