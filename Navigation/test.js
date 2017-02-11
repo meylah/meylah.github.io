@@ -39,25 +39,7 @@ let sensor = new MagnetometerSensor();
 sensor.start();
 
 sensor.onchange = function(event) {
+    alert("Hey you");
 document.getElementById("hiThere1").innerHTML = "MFx: " + event.reading.magneticFieldX + "<br/>" + "MFy: " + event.reading.magneticFieldY;
 };
 sensor.onerror = event => console.log(event.error.name, event.error.message);
-
-
-function accelerometerUpdate(e) {
-   var aX = event.accelerationIncludingGravity.x*1;
-   var aY = event.accelerationIncludingGravity.y*1;
-   var aZ = event.accelerationIncludingGravity.z*1;
-   //The following two lines are just to calculate a
-   // tilt. Not really needed. 
-   xPosition = Math.atan2(aY, aZ);
-   yPosition = Math.atan2(aX, aZ);
-}
-        if (window.DeviceMotionEvent == undefined) {
-        //No accelerometer is present. Use buttons. 
-        alert("no accelerometer");
-    };
-    else {
-        alert("accelerometer found");
-        window.addEventListener("devicemotion", accelerometerUpdate, true);
-    };
