@@ -35,16 +35,10 @@ function showError(error)
             break;
     }
 }
-function Geomagnetic() 
-{
 let sensor = new MagnetometerSensor();
 sensor.start();
 
 sensor.onchange = function(event) {
-    console.log("Magnetic field along the X-axis " + event.reading.magneticFieldX);
-    console.log("Magnetic field along the Y-axis " + event.reading.magneticFieldY);
-    console.log("Magnetic field along the Z-axis " + event.reading.magneticFieldZ);
+document.getElementById("hiThere").innerHTML = "MFx: " + event.reading.magneticFieldX + "<br/>" + "MFy: " + event.reading.magneticFieldY;
 };
-
 sensor.onerror = event => console.log(event.error.name, event.error.message);
-};
