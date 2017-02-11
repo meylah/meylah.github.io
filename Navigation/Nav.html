@@ -22,12 +22,4 @@
         <button onclick="Geomagnetic()">Hi There!</button>
         <div id="hiThere1"></div>
     </body> 
-        if (window.DeviceMotionEvent == undefined) {
-        //No accelerometer is present. Use buttons. 
-        alert("no accelerometer");
-    }
-    else {
-        alert("accelerometer found");
-        window.addEventListener("devicemotion", accelerometerUpdate, true);
-    }
 </html>
