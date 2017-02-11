@@ -14,6 +14,15 @@ function showPosition(position)
     +latlon+"&zoom=14&size=600x500&sensor=false";
     document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
     document.getElementById("hiThere").innerHTML = "latitude: " + position.coords.latitude + "<br/>" + "longitude: " + position.coords.longitude;
+
+    let sensor = new MagnetometerSensor();
+sensor.start();
+
+sensor.onchange = function(event) {
+    alert("Hey you");
+document.getElementById("hiThere1").innerHTML = "MFx: " + event.reading.magneticFieldX + "<br/>" + "MFy: " + event.reading.magneticFieldY;
+};
+sensor.onerror = event => console.log(event.error.name, event.error.message);
 }
 
 function showError(error) 
