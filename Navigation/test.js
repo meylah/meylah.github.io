@@ -14,7 +14,7 @@ function showPosition(position)
     +latlon+"&zoom=14&size=600x500&sensor=false";
     document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
     document.getElementById("hiThere").innerHTML = "latitude: " + position.coords.latitude + "<br/>" + "longitude: " + position.coords.longitude;
-
+    alert("Hey you");
     let sensor = new MagnetometerSensor();
 sensor.start();
 
