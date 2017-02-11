@@ -42,3 +42,14 @@ sensor.onchange = function Geomagnetic() {
 document.getElementById("hiThere1").innerHTML = "MFx: " + reading.magneticFieldX + "<br/>" + "MFy: " + reading.magneticFieldY;
 };
 sensor.onerror = event => console.log(event.error.name, event.error.message);
+
+
+function accelerometerUpdate(e) {
+   var aX = event.accelerationIncludingGravity.x*1;
+   var aY = event.accelerationIncludingGravity.y*1;
+   var aZ = event.accelerationIncludingGravity.z*1;
+   //The following two lines are just to calculate a
+   // tilt. Not really needed. 
+   xPosition = Math.atan2(aY, aZ);
+   yPosition = Math.atan2(aX, aZ);
+}
