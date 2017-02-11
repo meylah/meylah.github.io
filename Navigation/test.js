@@ -38,8 +38,8 @@ function showError(error)
 let sensor = new MagnetometerSensor();
 sensor.start();
 
-sensor.onchange = function Geomagnetic() {
-document.getElementById("hiThere1").innerHTML = "MFx: " + reading.magneticFieldX + "<br/>" + "MFy: " + reading.magneticFieldY;
+sensor.onchange = function(event) {
+document.getElementById("hiThere1").innerHTML = "MFx: " + event.reading.magneticFieldX + "<br/>" + "MFy: " + event.reading.magneticFieldY;
 };
 sensor.onerror = event => console.log(event.error.name, event.error.message);
 
