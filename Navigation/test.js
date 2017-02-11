@@ -53,3 +53,11 @@ function accelerometerUpdate(e) {
    xPosition = Math.atan2(aY, aZ);
    yPosition = Math.atan2(aX, aZ);
 }
+        if (window.DeviceMotionEvent == undefined) {
+        //No accelerometer is present. Use buttons. 
+        alert("no accelerometer");
+    };
+    else {
+        alert("accelerometer found");
+        window.addEventListener("devicemotion", accelerometerUpdate, true);
+    };
