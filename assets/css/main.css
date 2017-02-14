@@ -47,7 +47,8 @@ a:hover {
 }
 .title-big {
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
+  color:red;
 }
 .subtitle-big {
   text-align: center;
