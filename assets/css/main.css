@@ -203,7 +203,7 @@ a:hover {
   margin-top: 20px;
 }
 #features {
-  background: url(../img/backgrounds/feature-bg.jpg) no-repeat center center fixed;
+  background: url(../img/backgrounds/feature-bg.jpg) no-repeat center fixed;
   background-size: cover;
   overflow: hidden;
   position: relative;
