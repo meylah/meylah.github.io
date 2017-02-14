@@ -347,6 +347,7 @@ background: url(../img/backgrounds/kids-shopping.jpg) fixed;
 .wrap{
 	max-width: 600px;
 	margin:150px auto;
+	word-wrap: break-word
 }
 
 .typed-cursor{
