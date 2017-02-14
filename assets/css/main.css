@@ -47,14 +47,13 @@ a:hover {
 }
 .title-big {
   text-align: center;
-  font-size: 100%;
+  font-size: 100px;
 }
 .subtitle-big {
   text-align: center;
   font-weight: 100;
   padding-bottom: 30px;
   position: relative;
-  color: #bdc3c7;
 }
 .title-small {
   font-size: 45px;
@@ -344,7 +343,7 @@ background: url(../img/backgrounds/kids-shopping.jpg) fixed;
   background: #007bb6;
   color: #fff;
 }
-.wrap{
+.typed-wrap{
 	max-width: 600px;
 	margin:150px auto;
 	word-wrap: break-word
