@@ -123,7 +123,11 @@ a:hover {
   background: #333;
 }
 #hero-area {
-  background: url(../img/backgrounds/kids-shopping.jpg) fixed;
+  background: url(../img/backgrounds/kids-shopping.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   color: #fff;
 }
@@ -337,11 +341,4 @@ background: url(../img/backgrounds/kids-shopping.jpg) fixed;
 #bottom .social .fa-linkedin:hover {
   background: #007bb6;
   color: #fff;
-}
-.full {
-  background: url(http://placehold.it/1920x1080) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
