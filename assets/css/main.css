@@ -130,6 +130,7 @@ a:hover {
   -o-background-size: cover;
   background-size: cover;
   color: #0ff;
+  width:100%;
 }
 #hero-area .btn {
   margin-right: 20px;
@@ -146,6 +147,7 @@ a:hover {
 .hero-inner {
   position: relative;
   color: #fff;
+  width:100%;
 }
 .hero-inner:before {
   background-color: rgba(52, 152, 219, 0.4);
