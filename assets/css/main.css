@@ -338,3 +338,10 @@ background: url(../img/backgrounds/kids-shopping.jpg) fixed;
   background: #007bb6;
   color: #fff;
 }
+.full {
+  background: url(http://placehold.it/1920x1080) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
