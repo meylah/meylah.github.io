@@ -175,7 +175,6 @@ a:hover {
 }
 #sign-in-area,
 #sign-up-area {
-background: url(../img/backgrounds/kids-shopping.jpg) fixed;
 }
 #sign-in-area .title-big,
 #sign-up-area .title-big {
@@ -204,7 +203,7 @@ background: url(../img/backgrounds/kids-shopping.jpg) fixed;
   margin-top: 20px;
 }
 #features {
-  background: url(../img/backgrounds/feature-bg.jpg);
+  background: url(../img/backgrounds/feature-bg.jpg) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
   position: relative;
