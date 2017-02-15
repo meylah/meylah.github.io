@@ -276,8 +276,8 @@ font-family: 'Caveat Brush', cursive;
   text-transform: uppercase;
 }
 #features .box-item .text p {
-  color: #BABABA;
-  font-weight: 300;
+  color: #fff3a5;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
@@ -293,8 +293,6 @@ font-family: 'Caveat Brush', cursive;
 #f-title {
 font-family: 'Caveat Brush', cursive;
 }
-.text p {
-  color: #ffffff;
 }
 #bottom {
   background: #333;
