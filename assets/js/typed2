@@ -1,8 +1,8 @@
 $(function(){
     $("#typed").typed({
-        // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            // strings: ["Find a skirt for the jacket I bought last week.", "What should I buy to cook drunken noodles?", "Find me red tops below 25$","With love at your service."],
         stringsElement: $('#typed-strings'),
-        typeSpeed: 30,
+        typeSpeed: 20,
         backDelay: 500,
         loop: false,
         contentType: 'html', // or text
