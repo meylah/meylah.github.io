@@ -290,6 +290,9 @@ font-family: 'Caveat Brush', cursive;
 #features .show-box {
   padding: 22px 64px;
 }
+#features p {
+  color:white;
+}
 #bottom {
   background: #333;
   color: #fff;
