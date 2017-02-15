@@ -28,7 +28,29 @@
   <script src="assets/js/jquery-min.js"></script>
   <script src="assets/js/typed.js" type="text/javascript"></script>
   <script src="assets/js/typed2.js" type="text/javascript"></script>
- 
+ <script>
+$(function(){
+	$("#typed").typed({
+	    // strings: ["Find a skirt for the jacket I bought last week.", "What should I buy to cook drunken noodles?", "Find me red tops below 25$","With love at your service."],
+	    stringsElement: $('#typed-strings'),
+	    typeSpeed: 20,
+	    backDelay: 500,
+	    loop: false,
+	    contentType: 'html', // or text
+	    // defaults to false for infinite loop
+	    loopCount: false,
+	    callback: function(){ foo(); },
+	    resetCallback: function() { newTyped(); }
+	});
+	$(".reset").click(function(){
+	    $("#typed").typed('reset');
+	});
+	});
+	function newTyped(){ /* A new typed object */ }
+	function foo(){ console.log("Callback"); }
+</script>
+
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
   <!--[if lt IE 9]>
@@ -80,22 +102,20 @@
           <div class="col-md-12">
 	    <p></p>
             <h1 class="title-big" style="color:red;">Mila</h1>
+            <div class="typed-wrap">
+            <div id="typed-strings">
 	    <h1 class="subtitle-big" style="font-weight:300;">
-		<div class="typed-wrap">
-            	<div id="typed-strings">
                 <span>Find a skirt for the jacket I bought last week.</span>
                 <p>What should I buy to cook drunken noodles?</p>
                 <p>Find me red tops below 25$.</p>
-		 <p>With <span style="color:red"><strong>love</strong></span> at your service</p>
-            </div>
+		<p>With <span style="color:red"><strong>love</strong></span> at your service</p>
             <span id="typed" style="white-space:pre;"></span>
-           </div>
 	   </h1>
+	   </div>
+	   </div>
 	   <p></p>
 	   <p></p>
-  
-    
-		 
+   
             <h2 class="subtitle-big"></h2>
           </div>
         </div>
