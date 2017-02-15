@@ -140,6 +140,9 @@ a:hover {
 #hero-area p {
   padding: 50px 0;
 }
+#hero-area h1 {
+font-family: 'Caveat Brush', cursive;
+}
 #hero-area .row {
   padding: 100px 0;
 }
