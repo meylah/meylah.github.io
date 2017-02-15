@@ -252,7 +252,7 @@ font-family: 'Caveat Brush', cursive;
   padding-bottom: 40px;
 }
 #features .box-item .icon {
-  background: #fca10f;
+  background: #2980b9;
   text-align: center;
   margin-top: 12px;
   -webkit-transition: background 0.2s, color 0.2s;
@@ -269,7 +269,7 @@ font-family: 'Caveat Brush', cursive;
   transition: all 0.2s linear;
 }
 #features .box-item .text h4 {
-  color: #fca10f;
+  color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
@@ -277,7 +277,7 @@ font-family: 'Caveat Brush', cursive;
 }
 #features .box-item .text p {
   color: #fff3a5;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 14px;
   line-height: 18px;
 }
