@@ -193,7 +193,7 @@ font-family: 'Caveat Brush', cursive;
 }
 #main-features #feature-list-item-1,
 #main-features #feature-list-item-3 {
-  background: #ecf0f1;
+  background: #ffffff; /* ecf0f1 */
 }
 #main-features .title-small {
   color: #3498DB;
