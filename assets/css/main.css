@@ -292,11 +292,10 @@ font-family: 'Caveat Brush', cursive;
 }
 #f-title1 {
 font-family: 'Caveat Brush', cursive;
-color:red;
+color:#f44242;
 }
 #f-title2 {
 font-family: 'Caveat Brush', cursive;
-}
 }
 #bottom {
   background: #333;
