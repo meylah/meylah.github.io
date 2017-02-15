@@ -290,7 +290,11 @@ font-family: 'Caveat Brush', cursive;
 #features .show-box {
   padding: 22px 64px;
 }
-#f-title {
+#f-title1 {
+font-family: 'Caveat Brush', cursive;
+color:red;
+}
+#f-title2 {
 font-family: 'Caveat Brush', cursive;
 }
 }
