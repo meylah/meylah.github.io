@@ -28,28 +28,6 @@
   <script src="assets/js/jquery-min.js"></script>
   <script src="assets/js/typed.js" type="text/javascript"></script>
   <script src="assets/js/typed2.js" type="text/javascript"></script>
-  <script>
-	$(function(){
-	$("#typed").typed({
-	    // strings: ["Find a skirt for the jacket I bought last week.", "What should I buy to cook drunken noodles?", "Find me red tops below 25$","With love at your service."],
-	    stringsElement: $('#typed-strings'),
-	    typeSpeed: 20,
-	    backDelay: 500,
-	    loop: false,
-	    contentType: 'html', // or text
-	    // defaults to false for infinite loop
-	    loopCount: false,
-	    callback: function(){ foo(); },
-	    resetCallback: function() { newTyped(); }
-	});
-	$(".reset").click(function(){
-	    $("#typed").typed('reset');
-	});
-	});
-	function newTyped(){ /* A new typed object */ }
-	function foo(){ console.log("Callback"); }
-</script>
-
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
