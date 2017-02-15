@@ -254,8 +254,8 @@ font-family: 'Caveat Brush', cursive;
 #features .box-item .icon {
   background: #fff3a5;
   text-align: center;
-  margin-top: 12px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   -webkit-transition: background 0.2s, color 0.2s;
   -moz-transition: background 0.2s, color 0.2s;
   transition: background 0.2s, color 0.2s;
@@ -278,10 +278,10 @@ font-family: 'Caveat Brush', cursive;
 }
 #features .box-item .text p {
   color: #fff3a5;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  text-align:left;
+  text-align:justify;
 }
 #features .box-item:hover .icon {
   background: #2980b9;
