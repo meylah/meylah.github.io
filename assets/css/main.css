@@ -191,6 +191,44 @@ font-family: 'Caveat Brush', cursive;
   font-size: 28px;
   color: #3498DB;
 }
+#key-features1 i {
+  color: #333;
+  margin-bottom: 15px;
+}
+#key-features1 h3 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #3498DB;
+}
+#key-features2 i {
+  color: #333;
+  margin-bottom: 15px;
+}
+#key-features2 h3 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #3498DB;
+}
+#key-features3 i {
+  color: #333;
+  margin-bottom: 15px;
+}
+#key-features3 h3 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #3498DB;
+}
+#key-features4 i {
+  color: #333;
+  margin-bottom: 15px;
+}
+#key-features4 h3 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #3498DB;
+}
+
+
 #main-features #feature-list-item-1,
 #main-features #feature-list-item-3 {
   background: #ffffff; /* ecf0f1 */
