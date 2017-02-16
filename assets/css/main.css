@@ -430,6 +430,6 @@ font-family: 'Caveat Brush', cursive;
     100% { opacity:1; }
 }
 #what {
-    margin-right: -150px;
-    margin-left: -150px;
+    margin-right: -150px; !important
+    margin-left: -150px; !important
 }
