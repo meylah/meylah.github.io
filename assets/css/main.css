@@ -350,7 +350,7 @@ font-family: 'Caveat Brush', cursive;
 }
 #bottom .social i {
   border: 2px solid #3498db;
-  background: #3498db;
+  background: #0ff;
   color: #333;
   padding: 10px;
   margin-right: 5px;
@@ -389,6 +389,10 @@ font-family: 'Caveat Brush', cursive;
 #bottom .social .fa-linkedin:hover {
   background: #007bb6;
   color: #fff;
+}
+#bottom .social .fa-instagram:hover {
+  background: #fff;
+  color: #000;
 }
 .typed-wrap{
 	width : 100%;
