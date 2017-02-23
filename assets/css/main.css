@@ -151,7 +151,7 @@ font-family: 'Caveat Brush', cursive;
   width:100%;
 }
 .hero-inner:before {
-  background-color: rgba(52, 152, 219, 0.4);
+  background-color: rgba(52, 152, 219, 0.3);
   position: absolute;
   width: 100%;
   top: 0;
