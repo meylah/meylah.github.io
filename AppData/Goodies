@@ -6,7 +6,7 @@
     "GUnit": "Count",
     "GPrice": "100",
     "GPhoto": "Black",
-    "Photo": "https://raw.githubusercontent.com/meylah/meylah.github.io/master/AppData/lgTV1.jpg"
+    "Photo": "https://meylah.github.io/AppData/lgTV1.jpg"
   },
   {
     "GID": 2,
@@ -15,7 +15,7 @@
     "GUnit": "Count",
     "GPrice": "720",
     "GPhoto": "White",
-    "Photo": "https://raw.githubusercontent.com/meylah/meylah.github.io/master/AppData/boschWasher1.jpg"
+    "Photo": "https://meylah.github.io/AppData/boschWasher1.jpg"
   },
   {
     "GID": 3,
@@ -24,6 +24,6 @@
     "GUnit": "Count",
     "GPrice": "720",
     "GPhoto": "White",
-    "Photo": "https://raw.githubusercontent.com/meylah/meylah.github.io/master/AppData/dishwasher1.png"
+    "Photo": "https://meylah.github.io/AppData/dishwasher1.png"
   }
   ]
