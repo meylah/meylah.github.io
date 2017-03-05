@@ -14,5 +14,13 @@
     "GUnit": "Count",
     "GPrice": "720",
     "GPhoto": "White"
+  },
+  {
+    "GID": 3,
+    "GType": "Kitchen",
+    "GName": "Washer",
+    "GUnit": "Count",
+    "GPrice": "720",
+    "GPhoto": "White"
   }
   ]
