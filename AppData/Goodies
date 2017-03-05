@@ -1,0 +1,27 @@
+[
+  {
+    "GID": 1,
+    "GType": "Electronics",
+    "GName": "TV",
+    "GUnit": "Count",
+    "GPrice": "100",
+    "GPhoto": "Black"
+    "Photo": "http:"
+  },
+  {
+    "GID": 2,
+    "GType": "Kitchen",
+    "GName": "Washer",
+    "GUnit": "Count",
+    "GPrice": "720",
+    "GPhoto": "White"
+  },
+  {
+    "GID": 3,
+    "GType": "Kitchen",
+    "GName": "Washer",
+    "GUnit": "Count",
+    "GPrice": "720",
+    "GPhoto": "White"
+  }
+  ]
