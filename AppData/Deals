@@ -2,8 +2,8 @@
   {
     "DID": 1,
     "DDate": "March 1-30, 2017"
-    "DType": "Electronics",
-    "DName": "LG TV 40",
+    "GType": "Electronics",
+    "GName": "LG TV 40",
     "Discount": "70%",
     "GPrice": "30",
     "GColor": "Black",
@@ -13,8 +13,8 @@
   {
     "DID": 2,
     "DDate": "March 1-30, 2017"
-    "DType": "Kitchen",
-    "DName": "Washer",
+    "GType": "Kitchen",
+    "GName": "Washer",
     "Discount": "50%",
     "GPrice": "220",
     "GColor": "White",
@@ -24,8 +24,8 @@
   {
     "DID": 3,
     "DDate": "April 1-30, 2017"
-    "DType": "Kitchen",
-    "DName": "Washer",
+    "GType": "Kitchen",
+    "GName": "Washer",
     "Discount": "40%",
     "GPrice": "320",
     "GColor": "White",
@@ -35,8 +35,8 @@
   {
     "DID": 4,
     "DDate": "April 1-30, 2017"
-    "DType": "Clothing",
-    "DName": "Jacket",
+    "GType": "Clothing",
+    "GName": "Jacket",
     "Discount": "40%",
     "GPrice": "50",
     "GColor": "Blue",
