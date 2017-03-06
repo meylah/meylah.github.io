@@ -1,0 +1,46 @@
+[
+  {
+    "DID": 1,
+    "DDate": "March 1-30, 2017"
+    "DType": "Electronics",
+    "DName": "LG TV 40",
+    "Discount": "70%",
+    "GPrice": "30",
+    "GColor": "Black",
+    "GDesc": "Smart TV, LG, 40-Inch, True color",
+    "GPhoto": "https://meylah.github.io/AppData/LGTV.png"
+  },
+  {
+    "DID": 2,
+    "DDate": "March 1-30, 2017"
+    "DType": "Kitchen",
+    "DName": "Washer",
+    "Discount": "50%",
+    "GPrice": "220",
+    "GColor": "White",
+    "GDesc": "First class Bosch dishwasher, White, high quality",
+    "GPhoto": "https://meylah.github.io/AppData/boschWasher1.jpg"
+  },
+  {
+    "DID": 3,
+    "DDate": "April 1-30, 2017"
+    "DType": "Kitchen",
+    "DName": "Washer",
+    "Discount": "40%",
+    "GPrice": "320",
+    "GColor": "White",
+    "GDesc": "Dishwasher, first class, high quality",
+    "GPhoto": "https://meylah.github.io/AppData/dishwasher1.png"
+  },
+  {
+    "DID": 4,
+    "DDate": "April 1-30, 2017"
+    "DType": "Clothing",
+    "DName": "Jacket",
+    "Discount": "40%",
+    "GPrice": "50",
+    "GColor": "Blue",
+    "GDesc": "Dishwasher, first class, high quality",
+    "GPhoto": "https://meylah.github.io/AppData/dishwasher1.png"
+  }
+  ]
