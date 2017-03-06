@@ -2,11 +2,12 @@
   {
     "GID": 1,
     "GType": "Electronics",
-    "GName": "TV",
+    "GName": "LG TV 40",
     "GUnit": "Count",
     "GPrice": "100",
-    "GPhoto": "Black",
-    "Photo": "https://meylah.github.io/AppData/lgTV1.jpg"
+    "GColor": "Black",
+    "GDesc": "Smart TV, LG, 40-Inch, True color",
+    "GPhoto": "https://meylah.github.io/AppData/lgTV1.jpg"
   },
   {
     "GID": 2,
@@ -14,8 +15,9 @@
     "GName": "Washer",
     "GUnit": "Count",
     "GPrice": "720",
-    "GPhoto": "White",
-    "Photo": "https://meylah.github.io/AppData/boschWasher1.jpg"
+    "GColor": "White",
+    "GDesc": "First class Bosch dishwasher, White, high quality",
+    "GPhoto": "https://meylah.github.io/AppData/boschWasher1.jpg"
   },
   {
     "GID": 3,
@@ -23,7 +25,8 @@
     "GName": "Washer",
     "GUnit": "Count",
     "GPrice": "720",
-    "GPhoto": "White",
-    "Photo": "https://meylah.github.io/AppData/dishwasher1.png"
+    "GColor": "White",
+    "GDesc": "Dishwasher, first class, high quality",
+    "GPhoto": "https://meylah.github.io/AppData/dishwasher1.png"
   }
   ]
