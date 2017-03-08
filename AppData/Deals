@@ -1,6 +1,7 @@
 [
   {
     "DID": 1,
+    "DNew": 1,
     "DDate": "March 1-30, 2017",
     "GType": "Electronics",
     "GName": "LG TV 40",
@@ -12,6 +13,7 @@
   },
   {
     "DID": 2,
+    "DNew": 0,
     "DDate": "March 1-30, 2017",
     "GType": "Kitchen",
     "GName": "Washer",
@@ -23,6 +25,7 @@
   },
   {
     "DID": 3,
+    "DNew": 0,
     "DDate": "April 1-30, 2017",
     "GType": "Kitchen",
     "GName": "Washer",
@@ -34,6 +37,7 @@
   },
   {
     "DID": 4,
+    "DNew": 0,
     "DDate": "April 1-30, 2017",
     "GType": "Clothing",
     "GName": "Jacket",
