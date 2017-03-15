@@ -12,6 +12,7 @@
 
         <script>
 			var i = 0;
+			var bDest = 1;
 			var upX = 100, upY = 100;
 			var floorX = 200, floorY = 300;
             var s = Snap();
@@ -93,9 +94,17 @@
 			
 			lineAnimate();
 			setInterval(blink, 500);
+			
 			function blink() {
 				i = i + 2;
-				//alert(linePath);
+				if(bDest == 1){
+					bDest = 0;
+					dest.attr({display: 'none'});
+				}else{
+					bDest = 1;
+					dest.attr({display: ''});
+				}
+
 				switch(i){
 					case 10:
 						loc1.attr({display: 'none'});
@@ -142,14 +151,19 @@
 						loc8.attr({display: 'none'});
 						loc9.attr({display: ''});
 						break;
+					case 82:
+						gFloor.transform('r-115,200,250');
+						break;
+					case 84:
+						gFloor.transform('r-140,200,250');
+						break;
+					case 86:
+						gFloor.transform('r-165,200,250');
+						break;
+					case 88:
+						gFloor.transform('r-180,200,250');
 						break;
 				}
-				
-				//gFloor.transform('r' + i +',450,400');
-				//pathA.animate({ transform: "r360,100,100" }, 1000, function(){ 
-				//pathA.attr({ transform: 'rotate(0 256 256)'}); // Reset the position of the rays.
-				//blink(); // Repeat this animation so it appears infinite.
-				//});
 			};
         </script>
     </body>
