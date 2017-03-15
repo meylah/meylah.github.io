@@ -42,7 +42,7 @@
 			var lineLength = Snap.path.getTotalLength(linePath);
 			var pathA = s.path(linePath).attr({fill: "none", stroke: "blue", strokeWidth: 0, strokeDashoffset: lineLength, strokeLinecap: "round"});
 
-			gFloor = s.group(floor, chair1, chair2, chair3, chair4, chair5, chair6, chair7, chair8, loc1, loc2, loc3, loc4, loc5, loc6, loc7, loc8, loc9, table, dest, pathA);
+			gFloor = s.group(floor, pathA, chair1, chair2, chair3, chair4, chair5, chair6, chair7, chair8, loc1, loc2, loc3, loc4, loc5, loc6, loc7, loc8, loc9, table, dest);
 
 			gFloor.click(function(e){
 			  	Snap.animate(0, lineLength,
@@ -120,19 +120,19 @@
 					case 60:
 						loc6.attr({display: 'none'});
 						loc7.attr({display: ''});
-						gFloor.transform('r-15,200,200');
+						gFloor.transform('r-15,150,200');
 						break;
 					case 62:
-						gFloor.transform('r-35,200,200');
+						gFloor.transform('r-35,150,200');
 						break;
 					case 64:
-						gFloor.transform('r-55,200,200');
+						gFloor.transform('r-55,150,200');
 						break;
 					case 66:
-						gFloor.transform('r-75,200,200');
+						gFloor.transform('r-75,150,200');
 						break;
 					case 68:
-						gFloor.transform('r-90,200,200');
+						gFloor.transform('r-90,150,200');
 						break;
 					case 70:
 						loc7.attr({display: 'none'});
