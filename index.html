@@ -1,576 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title>Make Fabble</title>
+        <script src="snap.svg-min.js"></script>
+    </head>
+    <body>
+        <svg width="0" height="0">
+            <pattern id="pattern" patternUnits="userSpaceOnUse" x="0" y="0" width="400" height="400" viewBox="0 0 400 400">
+                <path d="M-5,0,10,15M0-5,15,10" stroke="white" stroke-width="5"/>
+            </pattern>
+        </svg>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MILA - My Intelligent Life Assistant</title>
+        <script>
+			var i = 0;
+			var upX = 100, upY = 100;
+			var floorX = 200, floorY = 300;
+            var s = Snap();
+			//var bigCircle = s.circle(150, 150, 100);
+			//bigCircle.attr({fill: "#bacada", stroke: "#000", strokeWidth: 2});
+			floor = s.rect(upX, upY, floorX, floorY, 5, 5).attr({fill: "#bacada", stroke: "#000", strokeWidth: 2});
+			chair1 = s.rect(upX+10, upY+50, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair2 = s.rect(upX+10, upY+100, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair3 = s.rect(upX+10, upY+150, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair4 = s.rect(upX+10, upY+200, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair5 = s.rect(upX+floorX-40, upY+50, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair6 = s.rect(upX+floorX-40, upY+100, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair7 = s.rect(upX+floorX-40, upY+150, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair8 = s.rect(upX+floorX-40, upY+200, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			table = s.rect(upX+70, upY+40, 60, 200, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			var dest = s.circle(upX+118, upY+50, 5).attr({fill: "red", stroke:"blue", strokeWidth:2});
+			var loc1 = s.circle(upX+55, upY+260, 5).attr({fill: "red"});
+			var loc2 = s.circle(upX+55, upY+220, 5).attr({fill: "red", display: "none"});
+			var loc3 = s.circle(upX+55, upY+180, 5).attr({fill: "red", display: "none"});
+			var loc4 = s.circle(upX+55, upY+140, 5).attr({fill: "red", display: "none"});
+			var loc5 = s.circle(upX+55, upY+100, 5).attr({fill: "red", display: "none"});
+			var loc6 = s.circle(upX+55, upY+60, 5).attr({fill: "red", display: "none"});
+			var loc7 = s.circle(upX+55, upY+25, 5).attr({fill: "red", display: "none"});
+			var loc8 = s.circle(upX+85, upY+25, 5).attr({fill: "red", display: "none"});
+			var loc9 = s.circle(upX+120, upY+25, 5).attr({fill: "red", display: "none"});
 
+			var linePath = "M155,360,155,125M155,125,220,125";
+			var lineLength = Snap.path.getTotalLength(linePath);
+			var pathA = s.path(linePath).attr({fill: "none", stroke: "blue", strokeWidth: 0, strokeDashoffset: lineLength, strokeLinecap: "round"});
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+			gFloor = s.group(floor, chair1, chair2, chair3, chair4, chair5, chair6, chair7, chair8, loc1, loc2, loc3, loc4, loc5, loc6, loc7, loc8, loc9, table, dest, pathA);
 
-  <!-- Main Style -->
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-
-  <!-- Responsive Style -->
-  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
-  <!--Icon Font-->
-  <link rel="stylesheet" media="screen" href="assets/fonts/css/font-awesome.min.css">
-
-
-  <!-- Extras -->
-  <link rel="stylesheet" type="text/css" href="assets/extras/animate.css">
- 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
-  
-  <!-- jQuery Load -->
-  <script src="assets/js/jquery-min.js"></script>
-  <script src="assets/js/typed.js" type="text/javascript"></script>
-  <script src="assets/js/typed2.js" type="text/javascript"></script>
- <script>
-$(function(){
-$("#typed").typed({
-    // strings: ["Find a skirt for the jacket I bought last week.", "What should I buy to cook drunken noodles?", "Find me red tops below 25$","With love at your service."],
-    stringsElement: $('#typed-strings'),
-    typeSpeed: 20,
-    backDelay: 500,
-    loop: false,
-    contentType: 'html', // or text
-    // defaults to false for infinite loop
-    loopCount: false,
-    callback: function(){ foo(); },
-    resetCallback: function() { newTyped(); }
-});
-$(".reset").click(function(){
-    $("#typed").typed('reset');
-});
-});
-function newTyped(){ /* A new typed object */ }
-function foo(){ console.log("Callback"); }
-</script>
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-  <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-</head>
-
-<body>
-  <!-- Nav Menu Section -->
-  <div class="logo-menu">
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header col-md-3">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#" class="navbar-brand"><img style="margin-top: -20px;" src="assets/img/features/Logo2.png"></a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="nav navbar-nav pull-right">
-            <li class="active"><a href="index.html">Home</a>
-            </li>
-            <li><a href="features.html">Features</a>
-            </li>
-            <li><a href="navigation/nav2.com">Navigation2</a>
-            </li>
-            <li><a href="Navigation/Nav.html">Navigation</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <!-- Nav Menu Section End -->
-
-  <!-- Hero Area Section -->
-
-  <section id="hero-area">
-    <div class="hero-inner">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-	    <p></p>
-            <h1 class="title-big" style="color:red;">Mila</h1>
-	    <h1 class="subtitle-big" style="font-weight:300;">
-	    <div class="typed-wrap">
-            <div id="typed-strings">
-                <span>Find a skirt for the jacket I bought last week.</span>
-                <p>What should I buy to cook drunken noodles?</p>
-                <p>Find me red tops below 25$.</p>
-		<p>With <span style="color:red"><strong>love</strong></span> at your service</p>
-	   </div>
-           <span id="typed" style="white-space:pre;"></span>
-	   </div>
-	   </h1>
-	   <p></p>
-	   <p></p>
-   
-            <h2 class="subtitle-big"></h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Hero Area Section End-->
-
-<!-- feature Section -->
-
-  <section id="key-features">
-    <div class="container text-center">
-      <div class="row">
-        <h1 class="title-small wow tada">Mila is for everone.</h1>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".5s">
-          <div class="feature-item">
-            <i class="fa fa-user fa-4x"></i>
-            <h3>You</h3>
-            <p>If you have a smartphone and you eat, shop, and travel.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".8s">
-          <div class="feature-item">
-            <i class="fa fa-rocket fa-4x"></i>
-            <h3>You</h3>
-            <p>If you manage a retail store, and you want to skyrocket your business.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="1.2s">
-          <div class="feature-item">
-            <i class="fa fa-thumbs-up fa-4x"></i>
-            <h3>and You</h3>
-            <p>If you are awesome! and think we are awesome too!</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- feature Section End -->
-
-  <!-- feature Section Start -->
-  <section id="features">
-  <div class="hero-inner">
-    <div class="container">
-      <div class="row">
-        <h1 id="f-title1" class="title-small wow tada" style="color:red;">Mila</h1>
-        <h1 id="f-title2" class="title-small wow tada">Just for you, Always with you.</h1>
-        <div class="col-md-12 text-center">
-          <a class="btn btn-border btn-lg wow fadeInLeft animated" data-wow-offset="10" href="#"><i class="fa fa-android"></i>Android</a>
-          <a class="btn btn-border btn-lg wow fadeInRight animated" data-wow-offset="10" href="#"><i class="fa fa-apple"></i>iPhone</a>
-	  <a class="btn btn-border btn-lg wow fadeInRight animated" data-wow-offset="10" href="#"><i class="fa fa-windows"></i>Windows</a>
-
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="content-left text-right wow fadeInLeft animated" data-wow-offset="10">
-            <div class="box-item left">
-              <span class="icon">
-                <i class="fa fa-heart-o"></i>
-              </span>
-              <div class="text">
-                <h4 style="text-align:left;">It is All About you!</h4>
-                <p>Mila will give you unique product suggestions and exclusive offers tailored just for you based on your shopping needs, your size, your style, and your budget.</p>
-              </div>
-            </div>
-            <div class="box-item left">
-              <span class="icon">
-                <i class="fa fa-location-arrow"></i>
-              </span>
-              <div class="text">
-                <h4 style="text-align:left;">looking for something?</h4>
-                <p>Whether looking for your loved ones in the store, a partiluar item, or ingredients for your next recipe, Mila will find it, and navigate you there turn by turn. Save time and optimize your purchase with relevant product info, reviews, and product comparison.</p>
-              </div>
-            </div>
-            <div class="box-item left">
-              <span class="icon">
-                <i class="fa fa-users"></i>
-              </span>
-              <div class="text">
-                <h4 style="text-align:left;">Shopping is fun with others.</h4>
-                <p>Do you like to have your mum's, sister's, or best friends opinion on what you are buying? Mila will let you secretly share your shopping with your loved ones to get their opinion on your new purchase.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="show-box wow fadeInDown animated" data-wow-offset="10">
-            <img src="assets/img/features/iPhone.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="content-right text-left wow fadeInRight animated" data-wow-offset="10">
-            <div class="box-item right">
-              <span class="icon">
-                <i class="fa fa-globe"></i>
-              </span>
-              <div class="text">
-                <h4>The world is your home!</h4>
-                <p>Every store in the world is your local store. Mila will take care of everything and ensures you get the best deals, and product suggestions all in your language and in your currency, as you would get in your local store.</p>
-              </div>
-            </div>
-            <div class="box-item right">
-              <span class="icon">
-                <i class="fa fa-gift"></i>
-              </span>
-              <div class="text">
-                <h4>Get rewarded as you shop!</h4>
-                <p>No matter where you are and where you shop, just keep on browsing and shopping for your favourites and get rewarded for that. Redeem your rewards for the gifts from your favorite stores. Could it be any better than this?</p>
-              </div>
-            </div>
-            <div class="box-item right">
-              <span class="icon">
-                <i class="fa fa-usd"></i>
-              </span>
-              <div class="text">
-                <h4>Manage your Time & Money</h4>
-                <p>Shopping is more fun without long checkout lines. Pay for in-store purchases by your phone and avoid the line. Mila will also remember all your shopping history, expenditures and total savings and will simply explain them all in one place to you.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Features Section Start -->	  
-
-  <!-- feature-list Section -->
-  <section id="main-features">
-    <div id="feature-list-item-1">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="title-small wow fadeInLeft" data-wow-offset="10">Lorem Ipsum is simply</h1>
-            <h2 class="subtitle-small wow fadeInUp" data-wow-delay=".8s" data-wow-offset="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <a class="btn btn-default btn-lg" href="#">Learn More</a> </h2>
-          </div>
-          <div class="col-md-6 wow fadeInRight" data-wow-delay=".5s" data-wow-offset="10">
-            <img class="pull-right" src="assets/img/features/graph.png">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="feature-list-item-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s" data-wow-offset="10">
-            <img src="assets/img/features/graph.png">
-          </div>
-          <div class="col-md-6">
-            <h1 class="title-small wow fadeInRight" data-wow-offset="10">Lorem Ipsum is simply</h1>
-            <h2 class="subtitle-small wow fadeInUp" data-wow-delay=".8s" data-wow-offset="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <a class="btn btn-default btn-lg" href="#">Learn More</a> </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <!-- feature-list Section End -->
-
-	  
-<!-- feature Section -->
-
-  <section id="key-features1">
-    <div class="container text-center">
-      <div class="row">
-        <h1 class="title-small wow tada">Mila for your store</h1>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".8s">
-          <div class="feature-item">
-            <i class="fa fa-magnet fa-4x"></i>
-            <h3>Attract</h3>
-            <p>Once customers with known shooping preferences and needs are within a known distance of your store, you will know and you can target the right customer with the right offer at the right place, to attract them to your store.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".5s">
-          <div class="feature-item">
-            <i class="fa fa-handshake-o fa-4x"></i>
-            <h3>Engage</h3>
-            <p>Pokemon go? Amazing! Engage your customers by creating the same experince at your store by guiding your customers to areas of interest to find amazing hidden deals and offer spred throughout your store.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="1.2s">
-          <div class="feature-item">
-            <i class="fa fa-heartbeat fa-4x"></i>
-            <h3>Excite</h3>
-            <p>Isn't it exciting to see you in a jacket you may like a lot? Or see all product info and ratings on top of each product? By our augmented reality engine excite your customers while they are at your store.</p>
-          </div>
-        </div>
-	      
-      </div>
-    </div>
-  </section>
-  <!-- feature Section End -->
-
- <section id="key-features2">
-    <div class="container text-center">
-      <div class="row">
-	      
-	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".8s">
-          <div class="feature-item">
-            <i class="fa fa-line-chart fa-4x"></i>
-            <h3>Convert & Up-sell</h3>
-            <p>Convert browsers into buyers by helping them to easily find what they need, and while navigating them to the product, recommend up-sell products based on their search, location, and purchasing habits of them and all your customers.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".5s">
-          <div class="feature-item">
-            <i class="fa fa-cart-plus fa-4x"></i>
-            <h3>Cut lost sale</h3>
-            <p>Help shoppers to find what they came for, suggest them what they may need, and give relevant amazing deals on those products, and cut the lost sale. If customer find what they truely love, you also reduce the chance of product return. It is that simple.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="1.2s">
-          <div class="feature-item">
-            <i class="fa fa-globe fa-4x"></i>
-            <h3>Go Global</h3>
-            <p>A Mila shopper from other part of the world in your area? we look at users preferences and shopping history, and if they are a good match for your store, we will let you know, and you can send personalized offers and deals, on what they may love the most in their language and currency.</p>
-          </div>
-        </div>
-	      
-      </div>
-    </div>
-  </section>
-  <!-- feature Section End -->
-	  
-
-  <!-- feature-list Section -->
-  <section id="main-features">
-    <div id="feature-list-item-1">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="title-small wow fadeInLeft" data-wow-offset="10">Lorem Ipsum is simply</h1>
-            <h2 class="subtitle-small wow fadeInUp" data-wow-delay=".8s" data-wow-offset="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <a class="btn btn-default btn-lg" href="#">Learn More</a> </h2>
-          </div>
-          <div class="col-md-6 wow fadeInRight" data-wow-delay=".5s" data-wow-offset="10">
-            <img class="pull-right" src="assets/img/features/db6.png">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="feature-list-item-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s" data-wow-offset="10">
-            <img src="assets/img/features/graph.png">
-          </div>
-          <div class="col-md-6">
-            <h1 class="title-small wow fadeInRight" data-wow-offset="10">Lorem Ipsum is simply</h1>
-            <h2 class="subtitle-small wow fadeInUp" data-wow-delay=".8s" data-wow-offset="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <a class="btn btn-default btn-lg" href="#">Learn More</a> </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <!-- feature-list Section End -->
-<!-- feature Section -->
-  <section id="key-features3">
-    <div class="container text-center">
-      <div class="row">
-        <h1 class="title-small wow tada">What you get?</h1>
-	      
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".5s">
-          <div class="feature-item">
-            <i class="fa fa-map fa-4x"></i>
-            <h3>Interactive Maps</h3>
-            <p>Interactively encode your store inventory into your floor plans at desired resoultion levels, with simple draging and dropping. Your searchable store map can be ready in a matter of minutes based on your store size and desired resolution.</p>
-          </div>
-        </div>
+			gFloor.click(function(e){
+			  	Snap.animate(0, lineLength,
+			    function(step){ //step function
+			      pathA.attr({
+			        path: Snap.path.getSubpath(linePath, 0, step),
+			        strokeWidth: 6
+			      });
+			      
+			    }, // end of step function
+			    800, //duration
+			    mina.easeInOut, //easing
+			    function(){ //callback
+			      setTimeout(function(){
+			        linePath.attr({
+			          path: Snap.path.getSubpath(linePath, 0, 0),
+			          strokeWidth: 0
+			        });
+			      }, 1000);//setTimeout
+			    }//callback
+			  );//Snap.animate
+			});//click the circle
 
 
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".8s">
-          <div class="feature-item">
-            <i class="fa fa-street-view fa-4x"></i>
-            <h3>Live Positioning</h3>
-            <p>ur sensor-fusion technology enables live on-demand tracking of cutomers and staff on the map with a resolution of one foot. Enhance customer experince and increase your sales by delivering the right message to the right customer at the right time and place.</p>
-          </div>
-        </div>
+			function lineAnimate(e){
+			  	Snap.animate(0, lineLength,
+			    function(step){ //step function
+			      pathA.attr({
+			        path: Snap.path.getSubpath(linePath, 0, step),
+			        strokeWidth: 5
+			      });
+			    }, // end of step function
+			    1000, //duration
+			    mina.easeInOut, //easing
+			    function(){ //callback
+			      setTimeout(function(){
+			        linePath.attr({
+			          path: Snap.path.getSubpath(linePath, 0, 0),
+			          strokeWidth: 0
+			        });
+			      }, 1000);//setTimeout
+			    }//callback
+			  );//Snap.animate
+			};//click the circle
 
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="1.2s">
-          <div class="feature-item">
-            <i class="fa fa-bar-chart fa-4x"></i>
-            <h3>Costumer Analytics</h3>
-            <p>Use customer positioning data, dwell patterns, shopping behavior, in-store searches and mix them with excerpt costumer preferences, needs and purchase history  for most effective marketing and costumer targeting.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="key-features4">
-    <div class="container text-center">
-      <div class="row">
-	      
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".5s">
-          <div class="feature-item">
-            <i class="fa fa-table fa-4x"></i>
-            <h3>Operational Analytics</h3>
-            <p>Use customer traffic maps, trajecory, bahavior, and dwell patterns accross the store, at individual and aggregate levels to gain operational insight to improve operations and optimize product placement.</p>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".8s">
-          <div class="feature-item">
-            <i class="fa fa-eye fa-4x"></i>
-            <h3>Augmented Reality</h3>
-            <p>Make promotional and product videos part of a story in every customer's shopping journey at your store using our augmented reality engine. Stories are 22X more memorable than facts and 70% of brands find videos the most effective for content marketing.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="1.2s">
-          <div class="feature-item">
-            <i class="fa fa-language fa-4x"></i>
-            <h3>Multilingual Interaction</h3>
-            <p>Language should not be a barrier for effective shopping. Interact with people from 100 different languages, and help them effectively shop at your local store by our translator engine.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-	  
-
-  <!-- feature-list Section -->
-  <section id="main-features">
-    <div id="feature-list-item-1">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="title-small wow fadeInLeft" data-wow-offset="10">Lorem Ipsum is simply</h1>
-            <h2 class="subtitle-small wow fadeInUp" data-wow-delay=".8s" data-wow-offset="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <a class="btn btn-default btn-lg" href="#">Learn More</a> </h2>
-          </div>
-          <div class="col-md-6 wow fadeInRight" data-wow-delay=".5s" data-wow-offset="10">
-            <img class="pull-right" src="assets/img/features/graph.png">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="feature-list-item-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s" data-wow-offset="10">
-            <img src="assets/img/features/graph.png">
-          </div>
-          <div class="col-md-6">
-            <h1 class="title-small wow fadeInRight" data-wow-offset="10">Lorem Ipsum is simply</h1>
-            <h2 class="subtitle-small wow fadeInUp" data-wow-delay=".8s" data-wow-offset="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <a class="btn btn-default btn-lg" href="#">Learn More</a> </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <!-- feature-list Section End -->
-	  
-<!-- feature Section -->
-  <section id="key-features3">
-    <div class="container text-center">
-      <div class="row">
-        <h1 class="title-small wow tada">Why Mila?</h1>
-	      
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".5s">
-          <div class="feature-item">
-            <i class="fa fa-bolt fa-4x"></i>
-            <h3>Empowering Local Retails</h3>
-            <p>Local retails are at the heart of Mila. We make local retails visible beyond their local communities. By knowing each customer's purchase history and general info from each store, we find potential customers that best match each store, and let the stores reach them with most targeted and personalized offers, once the customer is within a set distance of the store.</p>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".8s">
-          <div class="feature-item">
-            <i class="fa fa-trophy fa-4x"></i>
-            <h3>Win-Win Experience</h3>
-            <p>With Mila customer and stores are on the same boat. While each customer enjoys the most personalized and uique offers based on his/her individual needs, the store highly increase the chance of selling and upselling products, while reducing the chance of product return.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="1.2s">
-          <div class="feature-item">
-            <i class="fa fa-shield fa-4x"></i>
-            <h3>High-level Security</h3>
-            <p>We understand how valuable and important your database is to you. Keep secrects of your store at your own trusted place, and let Mila have limited access to parts of your database for each customer at your store, as much as a junior sales assiatnt might need to help a customer to find what they need. Once customers leave your store they wont be able to make any quries from your system, unless you want them to.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>	  
-
-  <!-- feature Section End -->
-
-
-  <section id="bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <h3>Products</h3>
-          <ul>
-            <li><a href="#">Mila App</a>
-            </li>
-            <li><a href="#">Mila Dashboard</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <h3>FAQs</h3>
-          <ul>
-            <li><a href="#">Why us?</a>
-            </li>
-            <li><a href="#">Who we are?</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <h3>About</h3>
-          <ul>
-            <li><a href="#">Story</a>
-            </li>
-            <li><a href="#">Team</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <h3>Find us on</h3>
-          <a class="social" href="https://www.facebook.com/Heymilaapp"><i class="fa fa-facebook fa-2x"></i></a>
-          <a class="social" href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-          <a class="social" href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Bootstrap JS -->
-  <script src="assets/js/bootstrap.js"></script>
-  <!-- WOW JS plugin for animation -->
-  <script src="assets/js/wow.js"></script>
-  <!-- All JS plugin Triggers -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/typed.js" type="text/javascript"></script>
-  <script src="assets/js/typed2.js" type="text/javascript"></script>
-</body>
+			//pathA.animate({strokeWidth: 1, stroke: "#FF4136"}, 1000, function(){
+				//pathA.animate({strokeWidth: 5, stroke: "blue"}, 3000)});
+			
+			lineAnimate();
+			setInterval(blink, 500);
+			function blink() {
+				i = i + 2;
+				//alert(linePath);
+				switch(i){
+					case 10:
+						loc1.attr({display: 'none'});
+						loc2.attr({display: ''});
+						break;
+					case 20:
+						loc2.attr({display: 'none'});
+						loc3.attr({display: ''});
+						break;
+					case 30:
+						loc3.attr({display: 'none'});
+						loc4.attr({display: ''});
+						break;
+					case 40:
+						loc4.attr({display: 'none'});
+						loc5.attr({display: ''});
+						break;
+					case 50:
+						loc5.attr({display: 'none'});
+						loc6.attr({display: ''});
+						break;
+					case 60:
+						loc6.attr({display: 'none'});
+						loc7.attr({display: ''});
+						gFloor.transform('r-15,200,200');
+						break;
+					case 62:
+						gFloor.transform('r-35,200,200');
+						break;
+					case 64:
+						gFloor.transform('r-55,200,200');
+						break;
+					case 66:
+						gFloor.transform('r-75,200,200');
+						break;
+					case 68:
+						gFloor.transform('r-90,200,200');
+						break;
+					case 70:
+						loc7.attr({display: 'none'});
+						loc8.attr({display: ''});
+						break;
+					case 80:
+						loc8.attr({display: 'none'});
+						loc9.attr({display: ''});
+						break;
+						break;
+				}
+				
+				//gFloor.transform('r' + i +',450,400');
+				//pathA.animate({ transform: "r360,100,100" }, 1000, function(){ 
+				//pathA.attr({ transform: 'rotate(0 256 256)'}); // Reset the position of the rays.
+				//blink(); // Repeat this animation so it appears infinite.
+				//});
+			};
+        </script>
+    </body>
 </html>
- 
