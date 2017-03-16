@@ -1,32 +1,32 @@
 [
   {
-    "GID": 1,
-    "GType": "Electronics",
-    "GName": "LG TV 40",
-    "GUnit": "Count",
-    "GPrice": "100",
-    "GColor": "Black",
-    "GDesc": "Smart TV, LG, 40-Inch, True color",
-    "GPhoto": "https://meylah.github.io/AppData/LGTV.png"
+    "DID": 1,
+    "DNew": 1,
+    "GType": "Dress",
+    "GName": "Polka dot dress",
+    "Discount": "30%",
+    "GPrice": "Now 31$",
+    "GPhoto": "https://meylah.github.io/AppData/polkadot.jpg"
   },
   {
-    "GID": 2,
-    "GType": "Kitchen",
-    "GName": "Washer",
-    "GUnit": "Count",
-    "GPrice": "720",
-    "GColor": "White",
-    "GDesc": "First class Bosch dishwasher, White, high quality",
-    "GPhoto": "https://meylah.github.io/AppData/boschWasher1.jpg"
+    "DID": 2,
+    "DNew": 0,
+    "GType": "Shoes",
+    "GName": "wedge",
+    "Discount": "35%",
+    "GPrice": "Now 60$",
+    "GHistory":"Recommended for your white dress purchsed last month",
+    "GPhoto": "https://meylah.github.io/AppData/wedge.jpg"
   },
   {
-    "GID": 3,
-    "GType": "Kitchen",
-    "GName": "Washer",
-    "GUnit": "Count",
-    "GPrice": "720",
-    "GColor": "White",
+    "DID": 3,
+    "DNew": 0,
+    "GType": "Bag",
+    "GName": "Crossbody bag",
+    "Discount": "20%",
+    "GPrice": "Now 80$",
     "GDesc": "Dishwasher, first class, high quality",
-    "GPhoto": "https://meylah.github.io/AppData/dishwasher1.png"
-  }
+    "GPhoto": "https://meylah.github.io/AppData/crossbody.jpg"
+  },
+  
   ]
