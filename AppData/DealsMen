@@ -1,1 +1,22 @@
-1
+[
+ {
+    "DID": 1,
+    "DNew": 1,
+    "GType": "Sweater",
+    "GName": "polo ralph lauren",
+    "Discount": "40%",
+    "GPrice": "Now 60$",
+    "GPhoto": "https://meylah.github.io/AppData/sweater.jpg"
+  },
+  {
+    "DID": 1,
+    "DNew": 1,
+    "GType": "Classic Pants",
+    "GName": "Navy Cotton Pants",
+    "Discount": "20%",
+    "GPrice": "Now 80$",
+    "GPhoto": "https://meylah.github.io/AppData/pants.jpg"
+  },
+ 
+  ]
+
