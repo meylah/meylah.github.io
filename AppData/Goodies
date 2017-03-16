@@ -4,6 +4,42 @@
     "DNew": 1,
     "GType": "Dress",
     "GName": "Polka dot dress",
+    "GPrice": "45$",
+    "GSize": "available: 4,6,10,12"
+    "GPhoto": "https://meylah.github.io/AppData/polkadot.jpg"
+  },
+  {
+    "DID": 1,
+    "DNew": 1,
+    "GType": "Dress",
+    "GName": "Floral dress",
+    "GPrice": "55$",
+    "GSize": "available: 2,4,6,8,14"
+    "GPhoto": "https://meylah.github.io/AppData/Floral.jpg"
+  },
+  {
+    "DID": 1,
+    "DNew": 1,
+    "GType": "Dress",
+    "GName": "Polka dot dress",
+    "Discount": "30%",
+    "GPrice": "Now 31$",
+    "GPhoto": "https://meylah.github.io/AppData/polkadot.jpg"
+  },
+  {
+    "DID": 1,
+    "DNew": 1,
+    "GType": "Dress",
+    "GName": "Polka dot dress",
+    "Discount": "30%",
+    "GPrice": "Now 31$",
+    "GPhoto": "https://meylah.github.io/AppData/polkadot.jpg"
+  },
+  {
+    "DID": 1,
+    "DNew": 1,
+    "GType": "Dress",
+    "GName": "Polka dot dress",
     "Discount": "30%",
     "GPrice": "Now 31$",
     "GPhoto": "https://meylah.github.io/AppData/polkadot.jpg"
