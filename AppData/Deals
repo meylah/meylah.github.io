@@ -2,49 +2,31 @@
   {
     "DID": 1,
     "DNew": 1,
-    "DDate": "March 1-30, 2017",
-    "GType": "Electronics",
-    "GName": "LG TV 40",
-    "Discount": "70%",
-    "GPrice": "30",
-    "GColor": "Black",
-    "GDesc": "Smart TV, LG, 40-Inch, True color",
-    "GPhoto": "https://meylah.github.io/AppData/LGTV.png"
+    "GType": "Dress",
+    "GName": "Polka dot dress",
+    "Discount": "30%",
+    "GPrice": "Now 31$",
+    "GPhoto": "https://meylah.github.io/AppData/polkadot.jpg"
   },
   {
     "DID": 2,
     "DNew": 0,
-    "DDate": "March 1-30, 2017",
-    "GType": "Kitchen",
-    "GName": "Washer",
-    "Discount": "50%",
-    "GPrice": "220",
-    "GColor": "White",
-    "GDesc": "First class Bosch dishwasher, White, high quality",
-    "GPhoto": "https://meylah.github.io/AppData/boschWasher1.jpg"
+    "GType": "Shoes",
+    "GName": "wedge",
+    "Discount": "35%",
+    "GPrice": "Now 60$",
+    "GHistory":"Recommended for your white dress purchsed last month",
+    "GPhoto": "https://meylah.github.io/AppData/wedge.jpg"
   },
   {
     "DID": 3,
     "DNew": 0,
-    "DDate": "April 1-30, 2017",
-    "GType": "Kitchen",
-    "GName": "Washer",
-    "Discount": "40%",
-    "GPrice": "320",
-    "GColor": "White",
+    "GType": "Bag",
+    "GName": "Crossbody bag",
+    "Discount": "20%",
+    "GPrice": "Now 80$",
     "GDesc": "Dishwasher, first class, high quality",
-    "GPhoto": "https://meylah.github.io/AppData/dishwasher1.png"
+    "GPhoto": "https://meylah.github.io/AppData/crossbody.jpg"
   },
-  {
-    "DID": 4,
-    "DNew": 0,
-    "DDate": "April 1-30, 2017",
-    "GType": "Clothing",
-    "GName": "Jacket",
-    "Discount": "40%",
-    "GPrice": "50",
-    "GColor": "Blue",
-    "GDesc": "Jeans blue jacket",
-    "GPhoto": "https://meylah.github.io/AppData/Jack1.jpg"
-  }
+  
   ]
