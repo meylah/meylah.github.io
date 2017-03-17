@@ -7,7 +7,7 @@
     "GPrice": "98$",
     "GColor": "Blue",
     "GSize": "Size : M",
-    "GPhoto": "https://meylah.github.io/AppData/dishwasher1.jpg"
+    "GPhoto": "https://meylah.github.io/AppData/dressshirt.jpg"
   },
     {
     "DID": 2,
@@ -32,7 +32,7 @@
     {
     "DID": 4,
     "DDate": "July 27, 2016",
-    "GType": "sh0rt",
+    "GType": "short",
     "GName": "Adidas Short",
     "GPrice": "30$",
     "GColor": "Red",
