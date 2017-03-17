@@ -6,11 +6,12 @@
     "GName": "polo ralph lauren",
     "Discount": "40%",
     "GPrice": "Now 60$",
+    "GHistory": "",
     "GPhoto": "https://meylah.github.io/AppData/sweater.jpg"
   },
   {
-    "DID": 1,
-    "DNew": 1,
+    "DID": 2,
+    "DNew": 0,
     "GType": "Classic Pants",
     "GName": "Navy Cotton Pants",
     "Discount": "20%",
