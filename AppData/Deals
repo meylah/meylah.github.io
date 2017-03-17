@@ -6,6 +6,7 @@
     "GName": "Polka dot dress",
     "Discount": "30%",
     "GPrice": "Now 31$",
+    "GHistory": "",
     "GPhoto": "https://meylah.github.io/AppData/polkadot.jpg"
   },
   {
@@ -15,7 +16,7 @@
     "GName": "wedge",
     "Discount": "35%",
     "GPrice": "Now 60$",
-    "GHistory":"Recommended for your white dress purchsed last month",
+    "GHistory":"Recommended for the jeans you purchsed 2 weeks ago ",
     "GPhoto": "https://meylah.github.io/AppData/wedge.jpg"
   },
   {
@@ -25,7 +26,7 @@
     "GName": "Crossbody bag",
     "Discount": "20%",
     "GPrice": "Now 80$",
-    "GDesc": "Dishwasher, first class, high quality",
+    "GHistory":"Recommended for the white dress you purchsed last month",
     "GPhoto": "https://meylah.github.io/AppData/crossbody.jpg"
   },
   
