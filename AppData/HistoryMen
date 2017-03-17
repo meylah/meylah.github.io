@@ -6,7 +6,7 @@
     "GName": "Dress Shirt",
     "GPrice": "98$",
     "GColor": "Blue",
-    "GSize": "Size : M",
+    "GSize": "M",
     "GPhoto": "https://meylah.github.io/AppData/dressshirt.jpg"
   },
     {
@@ -16,7 +16,7 @@
     "GName": "Cotton Jacket",
     "GPrice": "250$",
     "GColor": "Green",
-    "GSize": "Size : M",
+    "GSize": "M",
     "GPhoto": "https://meylah.github.io/AppData/Jacket.jpg"
   },
     {
@@ -26,7 +26,7 @@
     "GName": "Adidas T-shirt",
     "GPrice": "20$",
     "GColor": "Gray",
-    "GSize": "Size : M",
+    "GSize": "M",
     "GPhoto": "https://meylah.github.io/AppData/Tshirt.jpg"
   },
     {
@@ -36,10 +36,7 @@
     "GName": "Adidas Short",
     "GPrice": "30$",
     "GColor": "Red",
-    "GSize": "Size : M",
+    "GSize": "M",
     "GPhoto": "https://meylah.github.io/AppData/short.jpg"
-  },
-  
-  
-  
+  }
   ]
