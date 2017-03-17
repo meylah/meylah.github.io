@@ -4,7 +4,7 @@
     "GType": "Dress",
     "GName": "Polka dot dress",
     "GPrice": "45$",
-    "GSize": "available: 4,6,10,12"
+    "GSize": "available: 4,6,10,12",
     "GPhoto": "https://meylah.github.io/AppData/polkadot.jpg"
   },
   {
@@ -12,7 +12,7 @@
     "GType": "Dress",
     "GName": "Floral dress",
     "GPrice": "55$",
-    "GSize": "available: 2,4,6,8,14"
+    "GSize": "available: 2,4,6,8,14",
     "GPhoto": "https://meylah.github.io/AppData/Floral.jpg"
   },
   {
@@ -20,7 +20,7 @@
     "GType": "Dress",
     "GName": "White dress",
     "GPrice": "85$",
-    "GSize": "available: 2,4,6,8,10,14"
+    "GSize": "available: 2,4,6,8,10,14",
     "GPhoto": "https://meylah.github.io/AppData/White.jpg"
   },
   {
@@ -28,7 +28,7 @@
     "GType": "shoes",
     "GName": "Clarks shoes",
     "GPrice": "85$",
-    "GSize": "available: 9,9.5,10,5,11,11.5"
+    "GSize": "available: 9,9.5,10,5,11,11.5",
     "GPhoto": "https://meylah.github.io/AppData/CLARKS.jpg"
   },
   {
@@ -44,7 +44,7 @@
     "GType": "Shoes",
     "GName": "wedge shoes",
     "GPrice": "60$",
-    "GSize": "available: "6,7,7.5,8.5"
+    "GSize": "available: "6,7,7.5,8.5",
     "GPhoto": "https://meylah.github.io/AppData/wedge.jpg"
   },
   {
@@ -60,7 +60,7 @@
     "GType": "Sweater",
     "GName": "Polo Ralph Lauren Sweater",
     "GPrice": "98$",
-    "GSize": "available: "M,L,XL"
+    "GSize": "available: "M,L,XL",
     "GPhoto": "https://meylah.github.io/AppData/sweater.jpg"
   },
   {
@@ -68,7 +68,7 @@
     "GType": "Classic Pants",
     "GName": "Navy Cotton Pants",
     "GPrice": "100$",
-    "GSize": "available: "34,36,38,42"
+    "GSize": "available: "34,36,38,42",
     "GPhoto": "https://meylah.github.io/AppData/pants.jpg"
   },
     {
@@ -76,15 +76,15 @@
     "GType": "shirt",
     "GName": "Navy Polo Ralph Lauren shirt",
     "GPrice": "98$",
-    "GSize": "available: "S,M,L,XL"
+    "GSize": "available: "S,M,L,XL",
     "GPhoto": "https://meylah.github.io/AppData/shirt.jpg"
   },
-    {
+  {
     "DID": 11,
     "GType": "Coat",
     "GName": "Red Wool Coat",
     "GPrice": "150$",
-    "GSize": "available: "XS,S,M,L"
+    "GSize": "available: "XS,S,M,L",
     "GPhoto": "https://meylah.github.io/AppData/coat.jpg"
   }
   ]
