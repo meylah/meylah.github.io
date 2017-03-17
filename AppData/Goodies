@@ -60,5 +60,40 @@
     "GPrice": "80$",
     "GPhoto": "https://meylah.github.io/AppData/crossbody.jpg"
   },
+  {
+    "DID": 1,
+    "DNew": 1,
+    "GType": "Sweater",
+    "GName": "polo ralph lauren",
+    "GPrice": "98$",
+    "GPhoto": "https://meylah.github.io/AppData/sweater.jpg"
+  },
+  {
+    "DID": 1,
+    "DNew": 1,
+    "GType": "Classic Pants",
+    "GName": "Navy Cotton Pants",
+    "GPrice": "100$",
+    "GPhoto": "https://meylah.github.io/AppData/pants.jpg"
+  },
+    {
+    "DID": 1,
+    "DNew": 1,
+    "GType": "shirt",
+    "GName": "Navy Polo Ralph Lauren shirt",
+    "GPrice": "98$",
+    "GSize": "available: "S,M,L,XL"
+    "GPhoto": "https://meylah.github.io/AppData/shirt.jpg"
+  },
+      {
+    "DID": 1,
+    "DNew": 1,
+    "GType": "Coat",
+    "GName": "Tommy Coat",
+    "GPrice": "150$",
+    "GSize": "available: ",XS,M,L,"
+    "GPhoto": "https://meylah.github.io/AppData/coat.jpg"
+  },
+ 
   
   ]
