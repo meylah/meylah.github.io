@@ -1,7 +1,6 @@
 [
   {
     "DID": 1,
-    "DNew": 1,
     "GType": "Dress",
     "GName": "Polka dot dress",
     "GPrice": "45$",
@@ -9,8 +8,7 @@
     "GPhoto": "https://meylah.github.io/AppData/polkadot.jpg"
   },
   {
-    "DID": 1,
-    "DNew": 1,
+    "DID": 2,
     "GType": "Dress",
     "GName": "Floral dress",
     "GPrice": "55$",
@@ -18,8 +16,7 @@
     "GPhoto": "https://meylah.github.io/AppData/Floral.jpg"
   },
   {
-    "DID": 1,
-    "DNew": 1,
+    "DID": 3,
     "GType": "Dress",
     "GName": "White dress",
     "GPrice": "85$",
@@ -27,8 +24,7 @@
     "GPhoto": "https://meylah.github.io/AppData/White.jpg"
   },
   {
-    "DID": 1,
-    "DNew": 1,
+    "DID": 4,
     "GType": "shoes",
     "GName": "Clarks shoes",
     "GPrice": "85$",
@@ -36,62 +32,59 @@
     "GPhoto": "https://meylah.github.io/AppData/CLARKS.jpg"
   },
   {
-    "DID": 1,
-    "DNew": 1,
+    "DID": 5,
     "GType": "bag",
     "GName": "Wallet",
     "GPrice": "50 $",
+    "GSize": "",
     "GPhoto": "https://meylah.github.io/AppData/Wallet.jpg"
   },
   {
-    "DID": 2,
-    "DNew": 0,
+    "DID": 6,
     "GType": "Shoes",
-    "GName": "wedge",
+    "GName": "wedge shoes",
     "GPrice": "60$",
     "GSize": "available: "6,7,7.5,8.5"
     "GPhoto": "https://meylah.github.io/AppData/wedge.jpg"
   },
   {
-    "DID": 3,
-    "DNew": 0,
+    "DID": 7,
     "GType": "Bag",
     "GName": "Crossbody bag",
     "GPrice": "80$",
+    "GSize": "",
     "GPhoto": "https://meylah.github.io/AppData/crossbody.jpg"
   },
   {
-    "DID": 1,
-    "DNew": 1,
+    "DID": 8,
     "GType": "Sweater",
-    "GName": "polo ralph lauren",
+    "GName": "Polo Ralph Lauren Sweater",
     "GPrice": "98$",
+    "GSize": "available: "M,L,XL"
     "GPhoto": "https://meylah.github.io/AppData/sweater.jpg"
   },
   {
-    "DID": 1,
-    "DNew": 1,
+    "DID": 9,
     "GType": "Classic Pants",
     "GName": "Navy Cotton Pants",
     "GPrice": "100$",
+    "GSize": "available: "34,36,38,42"
     "GPhoto": "https://meylah.github.io/AppData/pants.jpg"
   },
     {
-    "DID": 1,
-    "DNew": 1,
+    "DID": 10,
     "GType": "shirt",
     "GName": "Navy Polo Ralph Lauren shirt",
     "GPrice": "98$",
     "GSize": "available: "S,M,L,XL"
     "GPhoto": "https://meylah.github.io/AppData/shirt.jpg"
   },
-      {
-    "DID": 1,
-    "DNew": 1,
+    {
+    "DID": 11,
     "GType": "Coat",
-    "GName": "Tommy Coat",
+    "GName": "Red Wool Coat",
     "GPrice": "150$",
-    "GSize": "available: ",XS,M,L,"
+    "GSize": "available: "XS,S,M,L"
     "GPhoto": "https://meylah.github.io/AppData/coat.jpg"
   },
  
