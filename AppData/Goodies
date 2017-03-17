@@ -44,7 +44,7 @@
     "GType": "Shoes",
     "GName": "wedge shoes",
     "GPrice": "60$",
-    "GSize": "available: "6,7,7.5,8.5",
+    "GSize": "available: 6,7,7.5,8.5",
     "GPhoto": "https://meylah.github.io/AppData/wedge.jpg"
   },
   {
@@ -60,7 +60,7 @@
     "GType": "Sweater",
     "GName": "Polo Ralph Lauren Sweater",
     "GPrice": "98$",
-    "GSize": "available: "M,L,XL",
+    "GSize": "available: M,L,XL",
     "GPhoto": "https://meylah.github.io/AppData/sweater.jpg"
   },
   {
@@ -68,7 +68,7 @@
     "GType": "Classic Pants",
     "GName": "Navy Cotton Pants",
     "GPrice": "100$",
-    "GSize": "available: "34,36,38,42",
+    "GSize": "available: 34,36,38,42",
     "GPhoto": "https://meylah.github.io/AppData/pants.jpg"
   },
     {
@@ -76,7 +76,7 @@
     "GType": "shirt",
     "GName": "Navy Polo Ralph Lauren shirt",
     "GPrice": "98$",
-    "GSize": "available: "S,M,L,XL",
+    "GSize": "available: S,M,L,XL",
     "GPhoto": "https://meylah.github.io/AppData/shirt.jpg"
   },
   {
@@ -84,7 +84,7 @@
     "GType": "Coat",
     "GName": "Red Wool Coat",
     "GPrice": "150$",
-    "GSize": "available: "XS,S,M,L",
+    "GSize": "available: XS,S,M,L",
     "GPhoto": "https://meylah.github.io/AppData/coat.jpg"
   }
   ]
