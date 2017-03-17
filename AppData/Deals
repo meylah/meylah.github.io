@@ -16,7 +16,7 @@
     "GName": "wedge",
     "Discount": "35%",
     "GPrice": "60$",
-    "GHistory":"Recommended for the jeans you purchsed 2 weeks ago ",
+    "GHistory":"The jeans you purchsed 2 weeks ago ",
     "GPhoto": "https://meylah.github.io/AppData/wedge.jpg"
   },
   {
@@ -26,7 +26,7 @@
     "GName": "Crossbody bag",
     "Discount": "20%",
     "GPrice": "80$",
-    "GHistory":"Recommended for the white dress you purchsed last month",
+    "GHistory":"The white dress you purchsed last month",
     "GPhoto": "https://meylah.github.io/AppData/crossbody.jpg"
   }
   ]
