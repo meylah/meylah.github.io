@@ -21,37 +21,35 @@
     "DID": 1,
     "DNew": 1,
     "GType": "Dress",
-    "GName": "Polka dot dress",
-    "Discount": "30%",
-    "GPrice": "Now 31$",
-    "GPhoto": "https://meylah.github.io/AppData/polkadot.jpg"
+    "GName": "White dress",
+    "GPrice": "85$",
+    "GSize": "available: 2,4,6,8,10,14"
+    "GPhoto": "https://meylah.github.io/AppData/White.jpg"
   },
   {
     "DID": 1,
     "DNew": 1,
-    "GType": "Dress",
-    "GName": "Polka dot dress",
-    "Discount": "30%",
-    "GPrice": "Now 31$",
-    "GPhoto": "https://meylah.github.io/AppData/polkadot.jpg"
+    "GType": "shoes",
+    "GName": "Clarks shoes",
+    "GPrice": "85$",
+    "GSize": "available: 9,9.5,10,5,11,11.5"
+    "GPhoto": "https://meylah.github.io/AppData/CLARKS.jpg"
   },
   {
     "DID": 1,
     "DNew": 1,
-    "GType": "Dress",
-    "GName": "Polka dot dress",
-    "Discount": "30%",
-    "GPrice": "Now 31$",
-    "GPhoto": "https://meylah.github.io/AppData/polkadot.jpg"
+    "GType": "bag",
+    "GName": "Wallet",
+    "GPrice": "50 $",
+    "GPhoto": "https://meylah.github.io/AppData/Wallet.jpg"
   },
   {
     "DID": 2,
     "DNew": 0,
     "GType": "Shoes",
     "GName": "wedge",
-    "Discount": "35%",
-    "GPrice": "Now 60$",
-    "GHistory":"Recommended for your white dress purchsed last month",
+    "GPrice": "60$",
+    "GSize": "available: "6,7,7.5,8.5"
     "GPhoto": "https://meylah.github.io/AppData/wedge.jpg"
   },
   {
@@ -59,9 +57,7 @@
     "DNew": 0,
     "GType": "Bag",
     "GName": "Crossbody bag",
-    "Discount": "20%",
-    "GPrice": "Now 80$",
-    "GDesc": "Dishwasher, first class, high quality",
+    "GPrice": "80$",
     "GPhoto": "https://meylah.github.io/AppData/crossbody.jpg"
   },
   
