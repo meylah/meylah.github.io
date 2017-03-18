@@ -11,7 +11,7 @@
   },
   {
     "DID": 2,
-    "DNew": 0,
+    "DNew": 1,
     "GType": "Shoes",
     "GName": "wedge",
     "Discount": "35%",
