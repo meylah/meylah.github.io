@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <title>Make Fabble</title>
+        <script src="snap.svg-min.js"></script>
+    </head>
+    <body>
+        <svg width="0" height="0">
+            <pattern id="pattern" patternUnits="userSpaceOnUse" x="0" y="0" width="400" height="400" viewBox="0 0 400 400">
+                <path d="M-5,0,10,15M0-5,15,10" stroke="white" stroke-width="5"/>
+            </pattern>
+        </svg>
+
+        <script>
+			var i = 0;
+			var bDest = 1;
+			var upX = 100, upY = 100;
+			var floorX = 200, floorY = 300;
+            var s = Snap();
+			//var bigCircle = s.circle(150, 150, 100);
+			//bigCircle.attr({fill: "#bacada", stroke: "#000", strokeWidth: 2});
+			floor = s.rect(upX, upY, floorX, floorY, 5, 5).attr({fill: "#bacada", stroke: "#000", strokeWidth: 2});
+			chair1 = s.rect(upX+10, upY+50, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair2 = s.rect(upX+10, upY+100, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair3 = s.rect(upX+10, upY+150, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair4 = s.rect(upX+10, upY+200, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair5 = s.rect(upX+floorX-40, upY+50, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair6 = s.rect(upX+floorX-40, upY+100, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair7 = s.rect(upX+floorX-40, upY+150, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			chair8 = s.rect(upX+floorX-40, upY+200, 30, 30, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			table = s.rect(upX+70, upY+40, 60, 200, 5, 5).attr({fill: "#bacfff", stroke: "#000", strokeWidth: 1});
+			var dest = s.circle(upX+118, upY+50, 5).attr({fill: "red", stroke:"blue", strokeWidth:2});
+			var loc1 = s.circle(upX+55, upY+260, 5).attr({fill: "red"});
+			var loc2 = s.circle(upX+55, upY+220, 5).attr({fill: "red", display: "none"});
+			var loc3 = s.circle(upX+55, upY+180, 5).attr({fill: "red", display: "none"});
+			var loc4 = s.circle(upX+55, upY+140, 5).attr({fill: "red", display: "none"});
+			var loc5 = s.circle(upX+55, upY+100, 5).attr({fill: "red", display: "none"});
+			var loc6 = s.circle(upX+55, upY+60, 5).attr({fill: "red", display: "none"});
+			var loc7 = s.circle(upX+55, upY+25, 5).attr({fill: "red", display: "none"});
+			var loc8 = s.circle(upX+85, upY+25, 5).attr({fill: "red", display: "none"});
+			var loc9 = s.circle(upX+120, upY+25, 5).attr({fill: "red", display: "none"});
+
+			var linePath = "M155,360,155,125M155,125,220,125";
+			var lineLength = Snap.path.getTotalLength(linePath);
+			var pathA = s.path(linePath).attr({fill: "none", stroke: "blue", strokeWidth: 0, strokeDashoffset: lineLength, strokeLinecap: "round"});
+
+			gFloor = s.group(floor, pathA, chair1, chair2, chair3, chair4, chair5, chair6, chair7, chair8, loc1, loc2, loc3, loc4, loc5, loc6, loc7, loc8, loc9, table, dest);
+
+			gFloor.click(function(e){
+			  	Snap.animate(0, lineLength,
+			    function(step){ //step function
+			      pathA.attr({
+			        path: Snap.path.getSubpath(linePath, 0, step),
+			        strokeWidth: 6
+			      });
+			      
+			    }, // end of step function
+			    800, //duration
+			    mina.easeInOut, //easing
+			    function(){ //callback
+			      setTimeout(function(){
+			        linePath.attr({
+			          path: Snap.path.getSubpath(linePath, 0, 0),
+			          strokeWidth: 0
+			        });
+			      }, 1000);//setTimeout
+			    }//callback
+			  );//Snap.animate
+			});//click the circle
+
+
+			function lineAnimate(e){
+			  	Snap.animate(0, lineLength,
+			    function(step){ //step function
+			      pathA.attr({
+			        path: Snap.path.getSubpath(linePath, 0, step),
+			        strokeWidth: 5
+			      });
+			    }, // end of step function
+			    1000, //duration
+			    mina.easeInOut, //easing
+			    function(){ //callback
+			      setTimeout(function(){
+			        linePath.attr({
+			          path: Snap.path.getSubpath(linePath, 0, 0),
+			          strokeWidth: 0
+			        });
+			      }, 1000);//setTimeout
+			    }//callback
+			  );//Snap.animate
+			};//click the circle
+
+			//pathA.animate({strokeWidth: 1, stroke: "#FF4136"}, 1000, function(){
+				//pathA.animate({strokeWidth: 5, stroke: "blue"}, 3000)});
+			
+			lineAnimate();
+			setInterval(blink, 100);
+			
+			function blink() {
+				i = i + 2;
+				if(bDest == 1){
+					bDest = 0;
+					dest.attr({display: 'none'});
+				}else{
+					bDest = 1;
+					dest.attr({display: ''});
+				}
+
+				switch(i){
+					case 10:
+						loc1.attr({display: 'none'});
+						loc2.attr({display: ''});
+						break;
+					case 20:
+						loc2.attr({display: 'none'});
+						loc3.attr({display: ''});
+						break;
+					case 30:
+						loc3.attr({display: 'none'});
+						loc4.attr({display: ''});
+						break;
+					case 40:
+						loc4.attr({display: 'none'});
+						loc5.attr({display: ''});
+						break;
+					case 50:
+						loc5.attr({display: 'none'});
+						loc6.attr({display: ''});
+						break;
+					case 60:
+						loc6.attr({display: 'none'});
+						loc7.attr({display: ''});
+						gFloor.transform('r-15,200,250');
+						break;
+					case 62:
+						gFloor.transform('r-35,200,250');
+						break;
+					case 64:
+						gFloor.transform('r-55,200,250');
+						break;
+					case 66:
+						gFloor.transform('r-75,200,250');
+						break;
+					case 68:
+						gFloor.transform('r-90,200,250');
+						break;
+					case 70:
+						loc7.attr({display: 'none'});
+						loc8.attr({display: ''});
+						break;
+					case 80:
+						loc8.attr({display: 'none'});
+						loc9.attr({display: ''});
+						break;
+					case 82:
+						gFloor.transform('r-115,200,250');
+						break;
+					case 84:
+						gFloor.transform('r-140,200,250');
+						break;
+					case 86:
+						gFloor.transform('r-165,200,250');
+						break;
+					case 88:
+						gFloor.transform('r-180,200,250');
+						break;
+				}
+			};
+        </script>
+    </body>
+ </html>
